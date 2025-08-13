@@ -1,0 +1,239 @@
+{
+	"Errors": [],
+	"id": "_jjrqifzwv",
+	"name": "HPE_StandardContract",
+	"description": "Standard Controls and Config for HP Electronics Projects",
+	"company": "HP Electronics",
+	"client": "General",
+	"author": "Dean Philip",
+	"version": "1.0.0.0",
+	"schemaVersion": 1,
+	"subContractLinks": [],
+	"subContracts": [],
+	"specifications": [],
+	"components": [
+		{
+			"Errors": [],
+			"parentId": "_jjrqifzwv",
+			"id": "_cmfsjqae1",
+			"name": "GeneralControls",
+			"commands": [
+				{
+					"Errors": [],
+					"name": "PowerStatus",
+					"siblingId": "_znn2vq9ui",
+					"dataType": 1,
+					"notes": "",
+					"id": "_j62yh2w5g",
+					"parentId": "_cmfsjqae1",
+					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "MainVolume",
+					"siblingId": "_qa1g0y59x",
+					"dataType": 2,
+					"notes": "",
+					"id": "_mvs8m0irw",
+					"parentId": "_cmfsjqae1",
+					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "MainVolumeMute",
+					"siblingId": "_jr8kygibv",
+					"dataType": 1,
+					"notes": "",
+					"id": "_opta7iwrp",
+					"parentId": "_cmfsjqae1",
+					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "",
+					"siblingId": "_lmym1h5i5",
+					"dataType": 1,
+					"notes": "",
+					"id": "_3vwrjylof",
+					"parentId": "_cmfsjqae1",
+					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "",
+					"siblingId": "_nqm4frurc",
+					"dataType": 1,
+					"notes": "",
+					"id": "_6o6779h6k",
+					"parentId": "_cmfsjqae1",
+					"attributeType": 0
+				}
+			],
+			"feedbacks": [
+				{
+					"Errors": [],
+					"name": "MainVolume_Set",
+					"siblingId": "_mvs8m0irw",
+					"dataType": 2,
+					"notes": "",
+					"id": "_qa1g0y59x",
+					"parentId": "_cmfsjqae1",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "MainVolumeMute_Set",
+					"siblingId": "_opta7iwrp",
+					"dataType": 1,
+					"notes": "",
+					"id": "_jr8kygibv",
+					"parentId": "_cmfsjqae1",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "MainVolumeUp_Set",
+					"siblingId": "_3vwrjylof",
+					"dataType": 1,
+					"notes": "",
+					"id": "_lmym1h5i5",
+					"parentId": "_cmfsjqae1",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "Main VolumeDown_Set",
+					"siblingId": "_6o6779h6k",
+					"dataType": 1,
+					"notes": "",
+					"id": "_nqm4frurc",
+					"parentId": "_cmfsjqae1",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "activePage",
+					"siblingId": "_95981dowf",
+					"dataType": 3,
+					"notes": "",
+					"id": "_sjoumq6yn",
+					"parentId": "_cmfsjqae1",
+					"attributeType": 1
+				}
+			],
+			"specifications": []
+		},
+		{
+			"Errors": [],
+			"parentId": "_jjrqifzwv",
+			"id": "_89fuinawz",
+			"name": "SystemDetails",
+			"commands": [
+				{
+					"Errors": [],
+					"name": "ControlSystem_IP",
+					"siblingId": "_namen8qea",
+					"dataType": 3,
+					"notes": "",
+					"id": "_l7vk4h0ep",
+					"parentId": "_89fuinawz",
+					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "BuildingName",
+					"siblingId": "_4hjoe9no8",
+					"dataType": 3,
+					"notes": "",
+					"id": "_nvi0q7wr3",
+					"parentId": "_89fuinawz",
+					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "SystemName",
+					"siblingId": "_wr6nby9b7",
+					"dataType": 3,
+					"notes": "",
+					"id": "_m22kclon0",
+					"parentId": "_89fuinawz",
+					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "SystemTime",
+					"siblingId": "_c0p1ctuy3",
+					"dataType": 3,
+					"notes": "",
+					"id": "_vihxue33v",
+					"parentId": "_89fuinawz",
+					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "SystemDate",
+					"siblingId": "_zo24rh1ci",
+					"dataType": 3,
+					"notes": "",
+					"id": "_quul2wffv",
+					"parentId": "_89fuinawz",
+					"attributeType": 0
+				}
+			],
+			"feedbacks": [
+				{
+					"Errors": [],
+					"name": "",
+					"siblingId": "_l7vk4h0ep",
+					"dataType": 0,
+					"notes": "",
+					"id": "_namen8qea",
+					"parentId": "_89fuinawz",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "",
+					"siblingId": "_nvi0q7wr3",
+					"dataType": 0,
+					"notes": "",
+					"id": "_4hjoe9no8",
+					"parentId": "_89fuinawz",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "",
+					"siblingId": "_m22kclon0",
+					"dataType": 0,
+					"notes": "",
+					"id": "_wr6nby9b7",
+					"parentId": "_89fuinawz",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "",
+					"siblingId": "_vihxue33v",
+					"dataType": 0,
+					"notes": "",
+					"id": "_c0p1ctuy3",
+					"parentId": "_89fuinawz",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "",
+					"siblingId": "_quul2wffv",
+					"dataType": 0,
+					"notes": "",
+					"id": "_zo24rh1ci",
+					"parentId": "_89fuinawz",
+					"attributeType": 1
+				}
+			],
+			"specifications": []
+		}
+	],
+	"allComponentsForAllContracts": []
+}

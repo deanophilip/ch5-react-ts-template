@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import { viteSingleFile } from 'vite-plugin-singlefile';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 import { VitePWA } from 'vite-plugin-pwa';
+import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default (config: { mode: string; }) => {
@@ -12,6 +13,7 @@ export default (config: { mode: string; }) => {
   return defineConfig({
     plugins: [
       react(),
+      tailwindcss(),
       viteSingleFile(),
       viteStaticCopy({
         targets: [

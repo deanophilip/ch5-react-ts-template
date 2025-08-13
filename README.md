@@ -48,6 +48,8 @@ const webXPanelConfig = useMemo(() => ({
 
 useWebXPanel(webXPanelConfig);
 ```
+If you are using self signed certificates, you may need to got to :49200 and also accept the certificate.
+https://sdkcon78221.crestron.com/sdk/Crestron_HTML5UI/Content/Topics/Platforms/X-CS-SSC.htm
 
 ### Receive data via joins from the control system:
 ```ts

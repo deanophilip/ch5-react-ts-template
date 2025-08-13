@@ -1,0 +1,50 @@
+@import './App.css';
+$powerColWidth: 12rem;
+
+.footer {
+  background-color: rgba(175, 175, 175);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.footer_grid {
+  display: grid;
+  grid-template-columns:
+    [column1-start] $powerColWidth
+    [column1-end column2-start] 1fr
+    [column2-end column3-start] $powerColWidth
+    [column3-end];
+  grid-template-rows:
+    [row1-start] 1fr
+    [row1-end];
+  grid-template-areas:
+    'power router warning';
+  margin: 10px auto;
+  height: auto;
+  width: 1280px;
+  max-width: 1280px;
+  overflow: hidden;
+}
+
+.powerButton {
+  align-self: center;
+  justify-self: center;
+  width: 10rem;
+  height: 3.5rem;
+  margin: 4px;
+}
+
+.powerButton:hover {
+  background-color: var(--LightGreen);
+  color: black;
+  transform: scale(0.98);
+  cursor: pointer;
+}
+
+.powerButton:active {
+  background-color: var(--ConfirmationGreen);
+}

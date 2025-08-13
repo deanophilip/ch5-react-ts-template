@@ -1,0 +1,48 @@
+@import './App.css';
+
+.popupMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
+  width: 80%;
+}
+
+.error {
+  background-color: rgb(255, 83, 83);
+  color: rgb(116, 0, 0);
+  font-weight: bold;
+}
+
+.warning {
+  background-color: rgb(255, 187, 61);
+  color: var(--WarningYellow);
+  font-weight: bold;
+}
+
+.info {
+  background-color: rgba(175, 175, 175);
+  color: black;
+  font-weight: bold;
+}
+
+.popupContent{
+
+}
+
+.popupTitle{
+
+}
+
+.popupMessageBody{
+
+}
+
+.popupActions{
+
+}
+
+.popupActionBtn{
+  
+}

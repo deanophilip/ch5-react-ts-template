@@ -1,0 +1,32 @@
+<template id="HPE_StandardContract1.PopupCsInterface.PopupCsInterface">
+	<div id="PopupCsInterface.PopupCsInterface">
+	 	<!--
+ 	 	 State: 0-NotDefined,1-error, 2-warning, 3-info 
+ 	 	-->
+ 			<ch5-slider receiveStateValue="PopupCsInterface.PopupType" nohandle>
+        	</ch5-slider>
+	 	<span data-ch5-textcontent="PopupCsInterface.PopupTitle">Label</span>
+	 	<span data-ch5-textcontent="PopupCsInterface.PopupMessage">Label</span>
+	 	<ch5-textinput sendEventOnChange="PopupCsInterface.PopupStringInput_Set" receiveStateValue="PopupCsInterface.PopupStringInput"> </ch5-textinput>
+	 		<ch5-button receiveStateSelected="PopupCsInterface.PopupAction1IsDefined" disabled>
+        	</ch5-button>
+	 	<span data-ch5-textcontent="PopupCsInterface.PopupAction1Text">Label</span>
+	 		<ch5-button sendEventOnClick="PopupCsInterface.PopupAction1_Set" receiveStateSelected="PopupCsInterface.PopupAction1">
+        	</ch5-button>
+	 		<ch5-button receiveStateSelected="PopupCsInterface.PopupAction2IsDefined" disabled>
+        	</ch5-button>
+	 	<span data-ch5-textcontent="PopupCsInterface.PopupAction2Text">Label</span>
+	 		<ch5-button sendEventOnClick="PopupCsInterface.PopupAction2_Set" receiveStateSelected="PopupCsInterface.PopupAction2">
+        	</ch5-button>
+	 		<ch5-button receiveStateSelected="PopupCsInterface.PopupAction3IsDefined" disabled>
+        	</ch5-button>
+	 	<span data-ch5-textcontent="PopupCsInterface.PopupAction3Text">Label</span>
+	 		<ch5-button sendEventOnClick="PopupCsInterface.PopupAction3_Set" receiveStateSelected="PopupCsInterface.PopupAction3">
+        	</ch5-button>
+	 		<ch5-button receiveStateSelected="PopupCsInterface.PopupAction4IsDefined" disabled>
+        	</ch5-button>
+	 	<span data-ch5-textcontent="PopupCsInterface.PopupAction4Text">Label</span>
+	 		<ch5-button sendEventOnClick="PopupCsInterface.PopupAction4_Set" receiveStateSelected="PopupCsInterface.PopupAction4">
+        	</ch5-button>
+	 </div>
+</template>

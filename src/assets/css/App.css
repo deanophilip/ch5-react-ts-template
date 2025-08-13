@@ -1,7 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0095ff;
+  --foreground: #00458e;
+  --HpBlue: #02274f;
+  --HpYellow: #f4ae1c;
+  --HpWhite: #F9F7F7;
+  --HpLightBlue: #85B9E0;
+  --HpGreen: #A0DD37;
+
+
+
+  --LightGreen: #84d570;
+  --ConfirmationGreen: #1e9600;
+  --WarningYellow: #FFA500;
+  --ConfirmationRed: #FF0000;
+
+}
 
 body {
-    background-color: #121212;
+    background-color: var(--background);
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: row;
@@ -11,31 +33,62 @@ body {
     padding: 0;
 }
 
-.controlGroupWrapper {
+.connectionStatus {
+    position: absolute;
+    bottom: -100px; /* Or a value that moves it completely off-screen */
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    justify-self: center;
+    align-self: center;
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 1.5rem;
+    z-index: 1000;
 }
 
-.controlGroup {
-    width: 25%;
-    height: 80%;
-    padding: 1rem;
-    background-color: #696969;
-    border-radius: 15px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.connectionStatus.disconnected {
+    background-color: var(--WarningYellow);
+    color: rgb(0, 0, 0);
+    animation: fly-in-bottom 2s forwards; /* Apply the animation */
 }
 
-.controlGroup .btn {
+.connectionStatus.connected {
+    background-color: var(--ConfirmationGreen);
+    color: var(--HpWhite);
+    animation: fly-out-bottom 2s forwards; /* Apply the animation */
+}
+
+@keyframes fly-out-bottom {
+  0% {
+    bottom: 0;
+    opacity: 1;
+  }
+  100% {
+    bottom: -100px; /* Or a value that moves it completely off-screen */
+    opacity: 0;
+  }
+}
+
+@keyframes fly-in-bottom {
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+  0% {
+    bottom: -100px; /* Or a value that moves it completely on-screen */
+    opacity: 0;
+  }
+}
+
+.btn {
     /* margin: 1rem; */
     outline: none;
-    background-color: #0895e7;
+    background-color: #000000;
     color: #ffffff;
     border: 0;
     border-radius: 10px;
@@ -44,8 +97,8 @@ body {
     font-size: 16px;
 }
 
-.controlGroup .btn:active {
-    background-color: #71a0bb;
+.btn:active {
+    background-color: #484848;
 }
 
 .controlGroup p {

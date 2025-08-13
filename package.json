@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "build:dev": "tsc && vite build --mode development",
     "build:prod": "tsc && vite build --mode production",
-    "archive": "ch5-cli archive -p ch5-react-ts-template -d dist -o archive -c ./contracts/output/ContractExample/interface/mapping/ContractExample.cse2j",
+    "archive": "ch5-cli archive -p ch5-react-ts-template -d dist -o archive -c ./contracts/output/HPE_StandardContract1/interface/mapping/HPE_StandardContract1.cse2j",
     "deploy:mobile": "ch5-cli deploy -p -H 0.0.0.0 -t mobile archive/ch5-react-ts-template.ch5z",
     "deploy:xpanel": "ch5-cli deploy -p -H 0.0.0.0 -t web archive/ch5-react-ts-template.ch5z",
     "deploy:panel": "ch5-cli deploy -p -H 0.0.0.0 -t touchscreen archive/ch5-react-ts-template.ch5z --slow-mode",
@@ -19,8 +19,15 @@
     "@crestron/ch5-crcomlib": "^2.11.2",
     "@crestron/ch5-theme": "^2.11.2",
     "@crestron/ch5-webxpanel": "^2.8.0",
+    "@reduxjs/toolkit": "^2.8.2",
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/react-redux": "^7.1.34",
+    "@types/react-router-dom": "^5.3.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.7.1",
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
     "@crestron/ch5-shell-utilities-cli": "^2.11.2",
